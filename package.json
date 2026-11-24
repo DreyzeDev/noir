@@ -1,0 +1,17 @@
+{
+  "name": "noir",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A monochrome design kit for GitHub profiles and repository READMEs.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:demo": "node scripts/build.mjs profile.config.json examples/dreyze",
+    "stats": "node scripts/update-stats.mjs",
+    "stats:demo": "node scripts/update-stats.mjs profile.config.json examples/dreyze"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

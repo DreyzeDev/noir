@@ -1,0 +1,91 @@
+{
+  "name": "Dreyze",
+  "role": "Software developer",
+  "bio": "I'm Dreyze — a software developer building AI systems, native apps, and backend services. I care about clean interfaces, thoughtful engineering, and shipping things that actually work.",
+  "now": "Currently training language models, building rbit, and polishing iOS products.",
+  "tagline": [
+    "AI systems, native apps, and backend services.",
+    "Designed with restraint. Shipped with intent."
+  ],
+  "badge": {
+    "text": "Open to collaboration",
+    "color": "#34d399"
+  },
+  "meta": {
+    "top": "Dreyze / 2026",
+    "bottom": "Made in the dark"
+  },
+  "github": "DreyzeDev",
+  "telegram": "DreyzeDev",
+  "email": "",
+  "website": "",
+  "links": [],
+  "stats": {
+    "username": "DreyzeDev"
+  },
+  "projects": [
+    {
+      "name": "rbit",
+      "description": "Full-screen terminal AI coding agent with checkpoints, project memory, and streaming.",
+      "icon": "terminal",
+      "url": "https://github.com/DreyzeDev/rbit",
+      "tags": ["Python", "Electron", "TUI"]
+    },
+    {
+      "name": "DreyzeAI",
+      "description": "Decoder-only language model built from scratch — tokenizer, attention, training, inference.",
+      "icon": "neural",
+      "tags": ["PyTorch"],
+      "note": "private"
+    },
+    {
+      "name": "PUSH",
+      "description": "iOS fitness app with on-device pose tracking and automatic push-up counting.",
+      "icon": "activity",
+      "tags": ["iOS"],
+      "note": "private"
+    },
+    {
+      "name": "Messenger",
+      "description": "Cross-platform messenger with real-time chat, media, and calls, built end to end.",
+      "icon": "chat",
+      "tags": ["iOS", "backend"],
+      "note": "private"
+    },
+    {
+      "name": "MyTelegram",
+      "description": "Self-hosted Telegram server — protocol, storage, and multi-device sync.",
+      "icon": "send",
+      "tags": ["self-hosted"],
+      "note": "private"
+    },
+    {
+      "name": "MoonMail",
+      "description": "Private mail service with a minimal web dashboard and a custom delivery pipeline.",
+      "icon": "mail",
+      "tags": ["self-hosted"],
+      "note": "private"
+    }
+  ],
+  "projectsNote": "Ask me about the private ones — happy to walk through the design and the trade-offs.",
+  "stack": [
+    {
+      "label": "Languages",
+      "items": ["Swift", "Python", "C#", "C++", "TypeScript"]
+    },
+    {
+      "label": "AI / ML",
+      "items": ["PyTorch", "transformers", "training from scratch"]
+    },
+    {
+      "label": "Product",
+      "items": ["iOS", ".NET", "Node", "Electron", "Docker"]
+    }
+  ],
+  "footerNote": "Most of my work is private — message me and I'll walk you through it.",
+  "copyright": "© 2026 Dreyze · designed and built in the dark",
+  "credit": {
+    "label": "Noir",
+    "url": "https://github.com/DreyzeDev/noir"
+  }
+}
