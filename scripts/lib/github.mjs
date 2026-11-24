@@ -18,10 +18,15 @@ export async function fetchProfileStats(login, token = process.env.GITHUB_TOKEN)
     ...(token ? { authorization: `Bearer ${token}` } : {}),
   };
 
-  const api = async (path) => {
-    const response = await fetch(`${API}${path}`, { headers });
+  const api = async (path, requestHeaders = headers) => {
+    const response = await fetch(`${API}${path}`, { headers: requestHeaders });
     if (!response.ok) throw new Error(`GET ${path} failed with ${response.status}`);
     return response.json();
+  };
+
+  const publicHeaders = {
+    accept: "application/vnd.github+json",
+    "user-agent": `${login}-noir-stats`,
   };
 
   const user = await api(`/users/${login}`);
@@ -38,7 +43,7 @@ export async function fetchProfileStats(login, token = process.env.GITHUB_TOKEN)
 
   const events = [];
   for (let page = 1; page <= 3; page += 1) {
-    const chunk = await api(`/users/${login}/events/public?per_page=100&page=${page}`);
+    const chunk = await api(`/users/${login}/events/public?per_page=100&page=${page}`, publicHeaders);
     events.push(...chunk);
     const oldest = chunk.at(-1);
     if (chunk.length < 100 || (oldest && Date.parse(oldest.created_at) < utcToday - 91 * DAY)) break;
